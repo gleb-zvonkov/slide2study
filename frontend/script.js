@@ -2,7 +2,11 @@ const typingForm = document.querySelector('.typing-form');
 const chatList = document.querySelector('.chat-list');  
 const deleteChatButton =  document.querySelector('#delet-chat-button');
 let isResponseGenerating = false;
-const BASE_URL = 'http://localhost:3000';
+// const BASE_URL = 'http://localhost:3000';
+const BASE_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : "https://slide2study.onrender.com";
 
 let allMessages = []; //to resend this everytime to chatgpt 
 
@@ -74,7 +78,7 @@ async function handleFiles(files) {
   event.preventDefault();
 
   try {
-    const response = await fetch("http://localhost:3000/upload", {
+    const response = await fetch(`${BASE_URL}/upload`, {
       method: "POST",
       body: formData,
     });
