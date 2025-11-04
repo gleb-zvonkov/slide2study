@@ -3,10 +3,11 @@ const chatList = document.querySelector('.chat-list');
 const deleteChatButton =  document.querySelector('#delet-chat-button');
 let isResponseGenerating = false;
 // const BASE_URL = 'http://localhost:3000';
-const BASE_URL =
-  window.location.hostname === "localhost"
-    ? "http://localhost:3000"
-    : "https://slide2study.onrender.com";
+const BASE_URL = "https://slide2study.onrender.com";
+// const BASE_URL =
+//   window.location.hostname === "localhost"
+//     ? "http://localhost:3000"
+//     : "https://slide2study.onrender.com";
 
 let allMessages = []; //to resend this everytime to chatgpt 
 
