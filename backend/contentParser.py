@@ -48,7 +48,7 @@ Never include explanations outside of this JSON. No markdown, no comments.
 
 
 
-def call_content_parser_agent(parser_client, course_id, material_id, slides, model="gpt-4.1-mini", ) -> Dict[str, Any]:
+def call_content_parser_agent(parser_client, course_id, material_id, slides, model="gpt-4.1-mini", ):
     # put slides into a JSON payload
     user_payload: Dict[str, Any] = {
         "course_id": course_id,
@@ -97,5 +97,5 @@ def get_parsed_contents(input_file,course_id,material_id):
 
 
 
-#get_parsed_contents("1.pdf","ANA200","Introduction to HistologyOrdinary Connective Tissue, Cartilage and Bone")
+get_parsed_contents("1.pdf","ANA200","Introduction to HistologyOrdinary Connective Tissue, Cartilage and Bone")
 
