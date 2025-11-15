@@ -6,7 +6,7 @@ from typing import List
 
 
 # parse slides contents using partition_pdf library
-def get_slides(slide_name) -> List[ParsedSlide]:
+def get_slides(slide_name):
     elements = partition_pdf(
         filename=slide_name,
         strategy="hi_res",
