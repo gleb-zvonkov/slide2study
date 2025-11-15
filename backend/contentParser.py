@@ -1,4 +1,4 @@
-
+from pathlib import Path
 from utils import Client,PDFParser
 import json
 from typing import  Dict, Any
@@ -88,15 +88,14 @@ def get_parsed_contents(input_file,course_id,material_id):
     # parse text of slides from slides
     slides_parsed = PDFParser.get_slides(input_file)
 
-    for slide in slides_parsed:
-        print(slide.text)
     parsed_json = call_content_parser_agent(client,course_id=course_id,material_id=material_id,slides=slides_parsed,model="gpt-4.1-mini")
 
-    with open(course_id+"_"+material_id+".txt", "w", encoding="utf-8") as f:
+
+    with open("StoredContents/"+course_id+"_"+material_id+".txt", "w", encoding="utf-8") as f:
         json.dump(parsed_json, f, ensure_ascii=False, indent=2)
 
 
 
 
-get_parsed_contents("1.pdf","ANA200","Introduction to HistologyOrdinary Connective Tissue, Cartilage and Bone")
+#get_parsed_contents("1.pdf","ANA200","Introduction to HistologyOrdinary Connective Tissue, Cartilage and Bone")
 
