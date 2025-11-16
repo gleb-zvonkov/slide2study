@@ -1,0 +1,283 @@
+{'course_id': 'ANA200',
+ 'material_id': 'Connective tissue',
+ 'topics': [{'key_terms': ['histology',
+                           'cells',
+                           'tissues',
+                           'organs',
+                           'connective tissue',
+                           'epithelia',
+                           'muscle',
+                           'neural tissue',
+                           'differentiation'],
+             'raw_text': 'Histology is the study of microscopic anatomy, used '
+                         'to study cells, tissues, and organs, and is '
+                         'foundational for physiology, biochemistry, and '
+                         'pathology. Cells are the basic units of the human '
+                         'body, with differentiation leading to over 200 '
+                         'different cell types. Basic tissues consist of '
+                         'collections of structurally and functionally similar '
+                         'cells and their products. The four basic tissue '
+                         'types are connective tissue, epithelia, muscle, and '
+                         'neural tissue. These tissues combine to form organs '
+                         'with distinct structure and function.',
+             'source_spans': [{'slide_index': 2},
+                              {'slide_index': 3},
+                              {'slide_index': 4}],
+             'summary': 'Histology is the study of microscopic anatomy, '
+                        'focusing on cells, tissues, and organs. The four '
+                        'basic tissue types are connective tissue, epithelia, '
+                        'muscle, and neural tissue, which combine to form '
+                        'organs with specific structures and functions.',
+             'title': 'Introduction to Histology and Basic Tissue Types',
+             'topic_id': 'ANA200_t01'},
+            {'key_terms': ['connective tissue',
+                           'extracellular matrix',
+                           'ECM',
+                           'protein fibres',
+                           'ground substance',
+                           'cells',
+                           'fibrocyte',
+                           'chondrocyte',
+                           'osteocyte'],
+             'raw_text': 'Connective tissue resembles a Jell-O salad, '
+                         'consisting of various cells (like olives, celery, '
+                         'cheese) suspended in an acellular extracellular '
+                         'matrix (ECM). Most of connective tissue volume is '
+                         "ECM, which determines the tissue's properties: solid "
+                         '(bone), rubbery (cartilage), gelatinous (ordinary '
+                         'CT), or liquid (blood). ECM is composed of protein '
+                         'fibres embedded in an amorphous ground substance '
+                         'made of organic molecules and bound tissue fluid. '
+                         'Connective tissue cells produce and secrete protein '
+                         'fibres and organic components that bind tissue fluid '
+                         'to form ground substance. Different connective '
+                         'tissues reflect variations in ECM composition and '
+                         'proportions, with specialized cells like fibrocytes, '
+                         'chondrocytes, and osteocytes.',
+             'source_spans': [{'slide_index': 5},
+                              {'slide_index': 6},
+                              {'slide_index': 7}],
+             'summary': 'Connective tissue is characterized by a predominance '
+                        'of extracellular matrix (ECM) composed of protein '
+                        'fibers and ground substance, with relatively fewer '
+                        'cells. The ECM determines the physical '
+                        'characteristics of the connective tissue, which can '
+                        'range from solid to liquid depending on its '
+                        'composition.',
+             'title': 'Overview of Connective Tissue and Its Components',
+             'topic_id': 'ANA200_t02'},
+            {'key_terms': ['extracellular matrix',
+                           'collagen fibres',
+                           'elastic fibres',
+                           'ground substance',
+                           'proteoglycans',
+                           'adhesive glycoproteins',
+                           'tissue fluid',
+                           'compression resistance',
+                           'ECF'],
+             'raw_text': 'Connective tissue contains two main types of protein '
+                         'fibres: collagen fibres which impart tensile '
+                         'strength, and elastic fibres which provide '
+                         'resiliency. Each connective tissue has a unique '
+                         'composition of these fibres, defining its '
+                         'characteristics and function. The ground substance '
+                         'includes organic molecules like proteoglycans, which '
+                         'are negatively charged and hydrophilic, responsible '
+                         'for matrix consistency, turgidity, and resistance to '
+                         'compression. Adhesive glycoproteins stabilize the '
+                         'ECM by linking protein fibres, proteoglycans, and '
+                         'cell membranes. Tissue fluid, derived from blood '
+                         'plasma, circulates through connective tissue spaces, '
+                         'binding to components of the ECM, and its volume '
+                         'must be balanced to maintain homeostasis. An '
+                         'increase in tissue fluid volume is called edema. The '
+                         'extracellular fluid includes plasma in vessels, '
+                         'tissue fluid in connective tissue, and lymph in '
+                         'lymphatic vessels.',
+             'source_spans': [{'slide_index': 8},
+                              {'slide_index': 9},
+                              {'slide_index': 10},
+                              {'slide_index': 12}],
+             'summary': 'The ECM contains collagen fibers which provide '
+                        'tensile strength and elastic fibers which provide '
+                        'resiliency. The ground substance, rich in '
+                        'proteoglycans and adhesive glycoproteins, binds '
+                        'tissue fluid making the ECM resist compression. '
+                        'Tissue fluid circulates through connective tissue '
+                        'spaces and is continuously exchanged with blood '
+                        'plasma and lymph, maintaining fluid balance.',
+             'title': 'Extracellular Matrix Components: Fibres, Ground '
+                      'Substance, and Tissue Fluid',
+             'topic_id': 'ANA200_t03'},
+            {'key_terms': ['lymph',
+                           'lymphatic vessels',
+                           'lymph nodes',
+                           'antigen filtration',
+                           'immune response',
+                           'disease spread',
+                           'edema'],
+             'raw_text': 'Lymph drains away from connective tissue through '
+                         'lymphatic vessels and is filtered through lymph '
+                         'nodes which detect and clear antigens including '
+                         'cancer cells from afferent lymph. This limits the '
+                         'spread of disease and infection. Lymph nodes '
+                         'normally measure 2-10 mm, can enlarge with immune '
+                         'activity, and are palpable signs of disease or '
+                         'infection. Key lymph node sites include axillae, '
+                         'groin, neck, abdominal mesenteries, and thoracic '
+                         'mediastinum. The lymphatic system drains lymph into '
+                         'veins in the neck, with all lymph filtered by at '
+                         'least one node before returning to venous blood.',
+             'source_spans': [{'slide_index': 11}],
+             'summary': 'Lymphatic vessels drain lymph (fluid from connective '
+                        'tissue) into veins, passing through lymph nodes that '
+                        'filter antigens and cancer cells, helping limit '
+                        'disease spread. Enlarged lymph nodes indicate '
+                        'infection or disease and are commonly found in the '
+                        'axillae, groin, neck, abdominal mesenteries, and '
+                        'thoracic mediastinum.',
+             'title': 'Lymphatic System and Its Role in Connective Tissue',
+             'topic_id': 'ANA200_t04'},
+            {'key_terms': ['connective tissue cells',
+                           'mesenchyme',
+                           'fibroblasts',
+                           'chondrocytes',
+                           'osteocytes',
+                           'extracellular matrix',
+                           'ground substance'],
+             'raw_text': 'Connective tissue cells originate from mesenchyme, '
+                         'an embryonic connective tissue. Endothelial and '
+                         'mesothelial cells, though functionally epithelial as '
+                         'surface coverings, are embryologically connective '
+                         'tissue derived. Despite connective tissues being '
+                         'diverse, all share common components: cells, protein '
+                         'fibres, and ground substance. The type and '
+                         'proportion of these components vary between '
+                         'connective tissue types and determine their '
+                         'characteristics and functions.',
+             'source_spans': [{'slide_index': 13},
+                              {'slide_index': 14},
+                              {'slide_index': 15}],
+             'summary': 'All connective tissue cells derive from mesenchyme, '
+                        'an embryonic connective tissue. Despite their '
+                        'heterogeneity, connective tissues share basic '
+                        'components: cells, fibres, and ground substance, with '
+                        'varying proportions determining tissue '
+                        'characteristics and functions.',
+             'title': 'Connective Tissue Cells and Origin',
+             'topic_id': 'ANA200_t05'},
+            {'key_terms': ['connective tissue',
+                           'ordinary connective tissue',
+                           'loose connective tissue',
+                           'dense connective tissue',
+                           'specialized connective tissue',
+                           'reticular tissue',
+                           'adipose tissue',
+                           'dense regular',
+                           'dense irregular'],
+             'raw_text': 'Connective tissue is classified into ordinary '
+                         'connective tissue (also called connective tissue '
+                         'proper), supporting connective tissue (cartilage and '
+                         'bone), and blood. Ordinary connective tissue '
+                         'includes loose (areolar) connective tissue which is '
+                         'more cellular with fewer fibres and abundant ground '
+                         'substance and provides attachment, mobility, and '
+                         'immune defense. Dense connective tissue has densely '
+                         'packed collagen fibres with fewer cells and less '
+                         'ground substance; dense regular connective tissue '
+                         'has parallel fibres providing tensile strength along '
+                         'one axis (e.g., tendons and ligaments), while dense '
+                         'irregular connective tissue fibers form a meshwork '
+                         'providing multidirectional strength (e.g., organ '
+                         'capsules). Specialized connective tissue proper '
+                         'includes reticular tissue containing delicate '
+                         'reticular fibres forming a 3D network to support '
+                         'functional cells of organs, and adipose tissue '
+                         'composed mostly of adipocytes for energy storage '
+                         'supported by a reticular fibre stroma and is highly '
+                         'vascular.',
+             'source_spans': [{'slide_index': 16},
+                              {'slide_index': 17},
+                              {'slide_index': 18},
+                              {'slide_index': 19}],
+             'summary': 'Connective tissue is classified into ordinary '
+                        'connective tissue (proper), supporting connective '
+                        'tissue (cartilage and bone), and blood. Ordinary '
+                        'connective tissue includes loose (areolar), dense '
+                        '(regular and irregular), and specialized (reticular '
+                        'and adipose) types, each with distinct structural and '
+                        'functional properties.',
+             'title': 'Classification and Subtypes of Connective Tissue',
+             'topic_id': 'ANA200_t06'},
+            {'key_terms': ['cartilage',
+                           'chondrocytes',
+                           'extracellular matrix',
+                           'ground substance',
+                           'hyaline cartilage',
+                           'fibrocartilage',
+                           'elastic cartilage',
+                           'avascular'],
+             'raw_text': 'Cartilage contains sparse but essential chondrocytes '
+                         'embedded in a firm, pliable, resilient, and smooth '
+                         'extracellular matrix. The ECM is rich in ground '
+                         'substance which binds water strongly, enabling '
+                         'cartilage to withstand great compressive forces. '
+                         'Cartilage provides structure to soft tissues without '
+                         'rigidity. It is avascular, lacking lymphatic vessels '
+                         'and nerves, so cells depend on nutrient and gas '
+                         'diffusion through ground substance from surrounding '
+                         'tissues, resulting in slow or absent repair. There '
+                         'are three cartilage subtypes: hyaline cartilage, '
+                         'fibrocartilage, and elastic cartilage, differing in '
+                         'extracellular matrix composition and location.',
+             'source_spans': [{'slide_index': 21},
+                              {'slide_index': 22},
+                              {'slide_index': 23}],
+             'summary': 'Cartilage is a firm, pliable connective tissue that '
+                        'provides structural support to soft tissues and '
+                        'withstands compressive forces due to its highly '
+                        'hydrated ground substance. It is avascular and '
+                        'repairs slowly. Three main types exist: hyaline, '
+                        'fibrocartilage, and elastic cartilage, each with '
+                        'distinct locations and ECM fiber composition.',
+             'title': 'Cartilage: Characteristics and Subtypes',
+             'topic_id': 'ANA200_t07'},
+            {'key_terms': ['bone',
+                           'osteoid',
+                           'collagen fibres',
+                           'ground substance',
+                           'mineralization',
+                           'calcium',
+                           'compact bone',
+                           'spongy bone',
+                           'red bone marrow',
+                           'hematopoiesis'],
+             'raw_text': 'Bone matrix consists of about one-third organic '
+                         'matter called osteoid which is composed of '
+                         'approximately 90% collagen fibres and 10% ground '
+                         'substance including adhesive glycoproteins and '
+                         'proteoglycans. These organic components provide '
+                         'tensile strength and flexibility. Osteoid becomes '
+                         'mineralized primarily by calcium salts, along with '
+                         'phosphate, bicarbonate, citrate, magnesium, '
+                         'potassium, and sodium, which confer compressional '
+                         'strength. The hydrated surface crystals of minerals '
+                         'aid in electrolyte exchange between bone matrix and '
+                         'blood, allowing bone to function as a mineral '
+                         'reservoir. Bone tissue appears in two richly '
+                         'vascularized forms: compact (cortical) bone on the '
+                         'surface and spongy (cancellous or trabecular) bone '
+                         'internally. Spongy bone spaces house red bone '
+                         'marrow, the site of hematopoiesis. Although '
+                         'chemically similar, the arrangement of the bone '
+                         'matrix differs between compact and spongy bone.',
+             'source_spans': [{'slide_index': 24}, {'slide_index': 25}],
+             'summary': 'Bone matrix has an organic component called osteoid '
+                        'composed mainly of collagen fibers and ground '
+                        'substance and an inorganic mineral component largely '
+                        'of calcium salts. Bone tissue exists as compact '
+                        '(dense and superficial) and spongy (trabecular and '
+                        'deep) forms, with spongy bone containing red marrow '
+                        'for blood cell production.',
+             'title': 'Bone Composition and Structure',
+             'topic_id': 'ANA200_t08'}]}
