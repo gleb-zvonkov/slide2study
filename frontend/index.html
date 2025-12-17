@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title that is on the tab  -->
+    <title>slide2study</title>  
+    <link rel="icon" type="image/png" href="image/open-book.png">
+    <!-- Google Fonts and css -->
+     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>  
+
+       <div id="initial-screen" class="initial-screen ">     
+        <header class ="header">
+          <h2 class="title">slide2study</h2>
+          <h4 class="subtitle"> Learn course content using Bloom's Taxonomy</h4>
+        </header>
+        <div id="drop-zone" class="drop-zone">
+          <p>Upload your files to begin </p>
+          <input type="file" id="file-input" multiple hidden>
+        </div>
+      </div>  
+
+
+    <div class="chat-container">
+      <!-- Progress bar that shows what stage you are in -->
+
+      <div class="top-bar">
+
+        <div class="slide-counter" id="slide-counter">Slide: 4 / 26</div>
+
+        <div class="progress-bar">
+            <div class="step" data-endpoint="content">Content</div>
+            <div class="line"></div>
+            <div class="step" data-endpoint="remember">Remember</div>
+            <div class="line"></div>
+            <div class="step" data-endpoint="understand">Understand</div>
+            <div class="line"></div>
+            <div class="step" data-endpoint="apply">Apply</div>
+        </div>
+
+      </div>
+
+      <div class="chat-list">
+        <!-- Chat messages will be dynamically added here -->
+      </div>
+
+      <div class="typing-area">
+          <form action="#" class="typing-form" >
+              <div class="input-wrapper">
+                  <input type="text" placeholder="Enter answer here" class="typing-input" required>
+                      <button class="icon material-symbols-rounded">send</span>
+              </div>
+              <div class="action-buttons">
+                  
+                  <span id="delet-chat-button" class="icon material-symbols-rounded">delete</span>
+              </div>
+          </form>
+          <p class="disclaimer-text"> 
+              This bot may provide inaccurate information.
+          </p>
+      </div>
+      
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

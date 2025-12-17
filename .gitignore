@@ -1,0 +1,8 @@
+backend/node_modules
+.DS_Store
+.env
+backend/.env
+backend/node_modules
+backend/uploads
+backend/venv
+.vscode/
