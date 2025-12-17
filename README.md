@@ -7,14 +7,9 @@ The system consists of three agents: a summary generator agent, a question gener
 Students in content-heavy courses often rely on lecture slides as their main study resource, but slides provide limited support for active learning. They summarize key concepts without offering practice, feedback, or guidance. Slide2Study addresses this gap by converting raw slides into summaries, questions, and instant grading, turning passive slide review into a structured, interactive learning process.
 
 
-## Demo
-Real System Demo:        
+## Demo     
 https://drive.google.com/file/d/12EPlXN4EeNczIZfWcdDQSt2JvXL5KvWC/view?usp=sharing 
 
-https://utoronto-my.sharepoint.com/:v:/g/personal/gleb_zvonkov_mail_utoronto_ca/IQC31HYw1S59TaSkLB-rUXsUAXgt9OZYwSg4SerbXZ6Zzt8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Ir9vXt
-
-Gradio Demo:                 
-https://utoronto-my.sharepoint.com/personal/mohammadreza_sabramooz_mail_utoronto_ca/_layouts/15/stream.aspx?id=%2Fpersonal%2Fmohammadreza_sabramooz_mail_utoronto_ca%2FDocuments%2Fgradio_demo.webm&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.36bda53d-0a5a-4e9e-ab7b-3a28ca75367b&ct=1765417207528&or=OWA-NT-Mail&cid=83e1cce0-38a2-da43-bcce-e4ed2150bc37&ga=1&LOF=1&startedResponseCatch=true
 
 ## How the System Works
 1. The user uploads a PDF.    
