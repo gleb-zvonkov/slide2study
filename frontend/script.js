@@ -22,7 +22,8 @@ const typingForm = document.querySelector(".typing-form");
 const chatList = document.querySelector(".chat-list");
 const deleteChatButton = document.querySelector("#delet-chat-button");
 let isResponseGenerating = false;
-const BASE_URL = "http://127.0.0.1:5000";
+//const BASE_URL = "http://127.0.0.1:5000";
+const BASE_URL = "https://slide2study-production.up.railway.app";
 
 /******************************************
  * load in slides from local csv for testing
