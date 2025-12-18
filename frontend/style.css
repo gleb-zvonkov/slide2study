@@ -70,7 +70,7 @@
   width: 70%;
   padding: 3rem;
   font-size: 1.2rem;
-  margin-top: 1.5rem;  /* small gap below header */
+  margin-top: 0rem;  /* small gap below header */
 }
 
 /* Make the upload (drop-zone) larger */
@@ -88,12 +88,12 @@
 .initial-screen .title {
   font-size: 10rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   color: #333;
 }
 
 .initial-screen .header .title {
-  margin-bottom: 0.1rem; /* reduce from the default 2rem */
+  margin-bottom: 2rem; /* reduce from the default 2rem */
 }
 
 .initial-screen .header .subtitle {
@@ -112,6 +112,13 @@
 
 .drop-zone:hover {
   border-color: #555;
+}
+
+.upload-error {
+  color: red;
+  font-size: 2rem;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /***************************************************************/
@@ -161,7 +168,6 @@ body {
 /* Hides the header when the 'hide-header' class is applied to the body */
 body.hide-header .header{
     display: none;
-    margin-top:0;
 }
 
 
@@ -175,20 +181,22 @@ body.hide-header .header{
 /* Specific style for the title class within the header */
 .header .title {
       line-height: 1.2;        /* ensure full height around text */
-  padding: 0.25rem 0;      /* vertical buffer */
   display: inline-block;   /* prevent flex clipping */
+  margin-bottom: 0rem;
+  margin: 0;
+
 }
 
 .initial-screen .header .title {
     font-size: 5rem; /* or whatever size you prefer */
 }
 
-/* Specific style for the subtitle class within the header */
-.header .subtitle {
-    font-size: 2.5rem;
+.description {
+    margin-top:2rem;
+    font-size: 1.4rem;
     color: var(--subheading-color);
+    padding: 0 1rem;
 }
-
 
 .suggestion-list {
     margin-top: 9.5vh;

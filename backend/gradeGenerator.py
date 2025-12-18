@@ -8,7 +8,7 @@ Grading rules:
 - "incorrect" = The answer is missing required elements, is incomplete, oversimplified, or contains factual or reasoning errors.
 
 Output format:
-grade: correct or incorrect
+correct or incorrect
 explanation: An explanation of the correct answer
 
 Do NOT output anything else.

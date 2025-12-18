@@ -19,12 +19,19 @@
        <div id="initial-screen" class="initial-screen ">     
         <header class ="header">
           <h2 class="title">slide2study</h2>
-          <h4 class="subtitle"> Learn course content using Bloom's Taxonomy</h4>
         </header>
         <div id="drop-zone" class="drop-zone">
-          <p>Upload your files to begin </p>
+          <p>Upload a pdf file of lecture slides to begin </p>
           <input type="file" id="file-input" multiple hidden>
         </div>
+        
+        <div class="description">
+          Each slide is <strong>summarized </strong>, followed by <strong>Remember</strong>, <strong>Understand</strong>, and <strong>Apply</strong> questions.<br>
+          You can discuss the content freely and return to the questions by typing <strong>continue</strong>.<br>
+          To skip a slide, type <strong>skip</strong>.
+        </div>
+
+
       </div>  
 
 
@@ -36,7 +43,7 @@
         <div class="slide-counter" id="slide-counter">Slide: 4 / 26</div>
 
         <div class="progress-bar">
-            <div class="step" data-endpoint="content">Content</div>
+            <div class="step" data-endpoint="content">Summary</div>
             <div class="line"></div>
             <div class="step" data-endpoint="remember">Remember</div>
             <div class="line"></div>

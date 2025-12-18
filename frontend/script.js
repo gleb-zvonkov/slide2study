@@ -27,28 +27,28 @@ const BASE_URL = "http://127.0.0.1:5000";
 /******************************************
  * load in slides from local csv for testing
  ******************************************/
-let localSlides = {};
+// let localSlides = {};
 
-async function loadLocalSlides() {
-  const res = await fetch("sample_slides.csv");
-  const csvText = await res.text();
-  //console.log("CSV Text:", csvText);
+// async function loadLocalSlides() {
+//   const res = await fetch("sample_slides.csv");
+//   const csvText = await res.text();
+//   //console.log("CSV Text:", csvText);
 
-  const parsed = Papa.parse(csvText, {
-    header: true,
-    skipEmptyLines: true,
-  });
-  //console.log("Parsed CSV:", parsed);
+//   const parsed = Papa.parse(csvText, {
+//     header: true,
+//     skipEmptyLines: true,
+//   });
+//   //console.log("Parsed CSV:", parsed);
 
-  parsed.data.forEach((row) => {
-    const index = parseInt(row.slide_index);
-    const text = row.text;
-    localSlides[index] = text;
-  });
+//   parsed.data.forEach((row) => {
+//     const index = parseInt(row.slide_index);
+//     const text = row.text;
+//     localSlides[index] = text;
+//   });
 
-  //console.log("Local Slides Object:", localSlides[4]);
-}
-loadLocalSlides();
+//   //console.log("Local Slides Object:", localSlides[4]);
+// }
+// loadLocalSlides();
 
 /******************************************
  * extract text from PDF using pdf.js
@@ -111,13 +111,39 @@ dropZone?.addEventListener("drop", (e) => {
   handleFiles(e.dataTransfer.files);
 });
 
+
+function showUploadError(message) {
+  const dropZoneText = document.querySelector("#drop-zone p");
+  if (!dropZoneText) return;
+
+  dropZoneText.textContent = message;
+  dropZoneText.style.color = "#c0392b";
+}
+
+function clearUploadError() {
+  const dropZoneText = document.querySelector("#drop-zone p");
+  if (!dropZoneText) return;
+
+  dropZoneText.textContent = "Upload your files to begin";
+  dropZoneText.style.color = "";
+}
+
 async function handleFiles(files) {
   if (!files.length) return;
 
   const file = files[0];
 
-  // Extract PDF text locally
-  await extractPdfText(file);
+  if (file.type !== "application/pdf") {
+    showUploadError("Error: Upload a valid PDF file.");
+    return;
+  }
+
+  try {
+    await extractPdfText(file);
+  } catch (err) {
+    showUploadError("Error: Upload a valid PDF file.");
+    return;
+  }
 
   // Continue your UI transitions…
   document.getElementById("initial-screen")?.classList.add("hidden");
@@ -127,7 +153,7 @@ async function handleFiles(files) {
   }, 300);
 
   // Start session on page 1
-  state.currentSlide = 5;
+  state.currentSlide = 1;
   loadNextSummary();
 }
 
@@ -249,12 +275,35 @@ async function fetchFreeTalk(latestUserMessage) {
 /******************************************
  * MAIN FLOW FUNCTIONS
  ******************************************/
+
+// check if the slide has more than 15 words this is enough to work with
+function hasEnoughSlideContent(slideText, minWords = 15) {
+  if (!slideText) return false;
+
+  const wordCount = slideText.trim().split(/\s+/).filter(Boolean).length;
+
+  return wordCount >= minWords;
+}
+
 async function loadNextSummary() {
   // Reset Bloom level for new slide
   state.bloomIndex = 0;
 
   updateProgressBar();
   updateSlideCounter();
+
+  const slideText = localSlides[state.currentSlide];  //get the slide text
+
+  if (!hasEnoughSlideContent(slideText)) {
+    addMessage(
+      `Slide ${state.currentSlide} does not contain enough information. Skipping to the next slide.`,
+      "incoming"
+    );
+
+    state.currentSlide++;
+    loadNextSummary();
+    return;
+  }
 
   const result = await fetchSummary(state.currentSlide);
 
@@ -293,6 +342,19 @@ async function loadNextQuestion() {
 }
 
 async function processUserAnswer(userText) {
+  
+  //skip to the next slide if the user says 'skip'
+  if (userText.trim().toLowerCase() === "skip") {
+    state.freetalk = false;
+    state.freeTalkHistory = [];
+    state.currentQuestion = null;
+
+    state.currentSlide++;
+    loadNextSummary();
+    return;
+  }
+
+
   /******************************************
    * 0. If already in free-talk mode, handle that
    ******************************************/
