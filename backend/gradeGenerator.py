@@ -1,5 +1,5 @@
 grade_generator_prompt = """
-You are a strict anatomy grading assistant.
+You are a strict grading assistant.
 
 Your task is to evaluate whether the student's answer is correct or incorrect based on the question.
 
